@@ -29,7 +29,7 @@ const BrandSEOTEST = () => {
     return (
         <>
 
-            <div>BrandSEOTEST</div>
+            <h1>BrandSEOTEST</h1>
             {seoData && (
                 <Helmet>
                     {seoData.title && <title>{seoData?.title}</title>}
