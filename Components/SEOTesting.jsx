@@ -8,7 +8,7 @@ const SEOTesting = () => {
     
   return (
     <div>
-        This is for SEO testing...
+        <h1>This is for SEO testing...</h1>
 
         <button
             onClick={() => navigate('/sell-old-test-deletion')}
