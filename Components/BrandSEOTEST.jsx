@@ -23,7 +23,7 @@ const BrandSEOTEST = () => {
     }, [])
 
     console.log("main sell seo of brand ", seoData)
-    const owais = 'hello this is for description'
+    const description = 'hello this is for description'
     const seoh1 = 'this is h1 tag for brand seo'
 
     return (
