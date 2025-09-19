@@ -32,19 +32,19 @@ const BrandSEOTEST = () => {
             <div>BrandSEOTEST</div>
             {seoData && (
                 <Helmet>
-                    {seoData.title && <title>{seoData.title}</title>}
+                    {seoData.title && <title>{seoData?.title}</title>}
                     {seoData.description && (
-                        <meta name="description" content={seoData.description} />
+                        <meta name="description" content={seoData?.description} />
                     )}
-                    {seoData.footer && <meta name="footer" content={seoData.footer} />}
+                    {seoData.footer && <meta name="footer" content={seoData?.footer} />}
                     {seoData.title && (
-                        <meta property="og:title" content={seoData.title} />
+                        <meta property="og:title" content={seoData?.title} />
                     )}
                     {seoData.description && (
-                        <meta property="og:description" content={seoData.description} />
+                        <meta property="og:description" content={seoData?.description} />
                     )}
                     {seoData.headings?.h1 && (
-                        <meta name="h1" content={seoData.headings.h1} />
+                        <meta name="h1" content={seoData?.headings?.h1} />
                         // <meta name="h1" content={seoData.} />
                     )}
                     {seoData.others?.map(
@@ -53,8 +53,8 @@ const BrandSEOTEST = () => {
                             item?.text && (
                                 <meta
                                     key={index}
-                                    name={item.type.toLowerCase()}
-                                    content={item.text}
+                                    name={item?.type.toLowerCase()}
+                                    content={item?.text}
                                 />
                             )
                     )}
