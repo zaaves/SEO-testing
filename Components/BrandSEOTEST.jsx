@@ -34,7 +34,7 @@ const BrandSEOTEST = () => {
                 <Helmet>
                     {seoData.title && <title>{seoData.title}</title>}
                     {seoData.description && (
-                        <meta name="description" content={owais} />
+                        <meta name="description" content={seoData.description} />
                     )}
                     {seoData.footer && <meta name="footer" content={seoData.footer} />}
                     {seoData.title && (
@@ -44,8 +44,8 @@ const BrandSEOTEST = () => {
                         <meta property="og:description" content={seoData.description} />
                     )}
                     {seoData.headings?.h1 && (
-                        // <meta name="h1" content={seoData.headings.h1} />
-                        <meta name="h1" content={seoh1} />
+                        <meta name="h1" content={seoData.headings.h1} />
+                        // <meta name="h1" content={seoData.} />
                     )}
                     {seoData.others?.map(
                         (item, index) =>
